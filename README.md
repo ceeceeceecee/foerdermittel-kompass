@@ -32,12 +32,18 @@ Der Fördermittel-Kompass automatisiert die Suche, Prüfung und Überwachung:
 - [x] Lokale KI-Verarbeitung via Ollama – keine Cloud-Dienste, voll DSGVO-konform
 - [x] Selbstgehostet, Docker-basiert, einfach zu部署en
 
-## Architektur
+## 📸 Anwendung
 
-```
-+-------------------+     +-------------------+     +-------------------+
-|   Streamlit UI    |     |   PostgreSQL DB   |     |     Ollama KI     |
-|   (app.py)        |<--->|   (schema.sql)    |     |   (lokal)         |
+![Programmsuche](screenshots/program-search.png)
+*Förderprogramme durchsuchen und filtern*
+
+![KI-Matching](screenshots/matching-result.png)
+*Automatische Passunganalyse mit Bewertung*
+
+![Fristenkalender](screenshots/deadline-calendar.png)
+*Deadline-Tracking mit Ampelsystem*
+
+## Architektur
 |   Port 8501       |     |   Port 5432       |     |   Port 11434      |
 +-------------------+     +-------------------+     +-------------------+
         ^                         ^
