@@ -1,0 +1,62 @@
+# ============================================================
+# Beispiel-Konfiguration: Fördermittel-Quellen
+# Kopieren Sie diese Datei als sources.yaml und passen Sie sie an.
+# ============================================================
+
+quellen:
+  # --- RSS-Feeds ---
+  - name: "Bundesförderprogramm Digitalisierung"
+    typ: rss
+    url: "https://www.digitale-modelle.region/gpa-rss.xml"
+    aktiv: true
+
+  - name: "EU-Fördermittel RSS"
+    typ: rss
+    url: "https://ec.europa.eu/info/funding-tenders/opportunities/rss/de"
+    aktiv: true
+
+  # --- HTML-Seiten ---
+  - name: "Bundesministerium für Digitales"
+    typ: html
+    url: "https://www.bmdv.bund.de/SharedDocs/DE/Artikel/DG/foerderprogramme.html"
+    selektoren:
+      container: "article, .article"
+      titel: "h2, h3"
+      beschreibung: "p"
+      link: "a[href]"
+      frist: "time, .date"
+    aktiv: true
+
+  - name: "Förderdatenbank Bund"
+    typ: html
+    url: "https://www.foerderdatenbank.de/"
+    selektoren:
+      container: ".search-result, .funding-item"
+      titel: ".title, h3"
+      beschreibung: ".description, p"
+      link: "a[href]"
+      frist: ".deadline, time"
+    aktiv: true
+
+  # --- CSV-Import ---
+  - name: "Lokale Förderprogramme"
+    typ: csv
+    datei: "data/foerderprogramme.csv"
+    aktiv: true
+
+# ============================================================
+# Hinweise zur Konfiguration:
+#
+# typ:       rss | html | csv
+# url:       URL der Quelle (für rss und html)
+# datei:     Lokaler Dateipfad (für csv)
+# selektoren: CSS-Selektoren für HTML-Parser (nur bei typ: html)
+# aktiv:     true | false (Quelle ein-/ausschalten)
+#
+# Unterstützte Selektoren:
+#   container:     CSS-Selektor für den Programm-Container
+#   titel:         Selektor für den Titel
+#   beschreibung:  Selektor für die Beschreibung
+#   link:          Selektor für den Link
+#   frist:         Selektor für das Fristdatum
+# ============================================================

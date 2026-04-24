@@ -1,0 +1,95 @@
+# ============================================================
+# Anwendungseinstellungen — Fördermittel-Kompass
+# Kopieren Sie diese Datei als settings.yaml und passen Sie sie an.
+# ============================================================
+
+# Allgemeine Einstellungen
+app:
+  name: "Fördermittel-Kompass für Kommunen"
+  version: "1.0.0"
+  sprache: "de"
+  logo_text: "🧭 Fördermittel-Kompass"
+
+# Datenbankeinstellungen (werden durch .env überschrieben)
+datenbank:
+  host: "localhost"
+  port: 5432
+  name: "foerdermittel"
+  schema_pfad: "database/schema.sql"
+
+# Ollama KI-Einstellungen
+ki:
+  ollama_host: "http://localhost:11434"
+  modell: "llama3"
+  temperatur: 0.3
+  max_tokens: 2000
+  timeout: 120
+
+# E-Mail-Benachrichtigungen
+email:
+  aktiv: false
+  host: "smtp.kommune.de"
+  port: 587
+  tls: true
+  benutzer: ""
+  passwort: ""
+  absender: "foerdermittel@kommune.de"
+  empfaenger:
+    - "foerdermittel@kommune.de"
+
+# Fristverwaltung
+fristen:
+  # Benachrichtigungszeitpunkte in Tagen vor Frist
+  benachrichtigungen:
+    - 7
+    - 14
+    - 30
+    - 60
+    - 90
+  # Prüfung der Fristen (Cron-Ausdruck)
+  pruef_intervall: "0 8 * * *"  # Täglich um 08:00 Uhr
+
+# Themenfelder für die Kategorisierung
+themenfelder:
+  - "Digitalisierung"
+  - "Klimaschutz"
+  - "Soziales"
+  - "Smart City"
+  - "Kultur"
+  - "Mobilität"
+  - "Bildung"
+  - "Wirtschaftsförderung"
+  - "Infrastruktur"
+  - "Gesundheit"
+  - "Integration"
+  - "Nachhaltigkeit"
+
+# Bundesländer
+bundeslaender:
+  - "Baden-Württemberg"
+  - "Bayern"
+  - "Berlin"
+  - "Brandenburg"
+  - "Bremen"
+  - "Hamburg"
+  - "Hessen"
+  - "Mecklenburg-Vorpommern"
+  - "Niedersachsen"
+  - "Nordrhein-Westfalen"
+  - "Rheinland-Pfalz"
+  - "Saarland"
+  - "Sachsen"
+  - "Sachsen-Anhalt"
+  - "Schleswig-Holstein"
+  - "Thüringen"
+
+# Quell-Abruf-Einstellungen
+quellen:
+  # Verzögerung zwischen Anfragen in Sekunden (Rate-Limiting)
+  verzögerung: 2.0
+  # Timeout für HTTP-Anfragen in Sekunden
+  timeout: 30
+  # Maximalanzahl der Programme pro Quelle
+  max_programme: 500
+  # Automatischer Abruf (Cron-Ausdruck)
+  auto_abruf: "0 6 * * 1"  # Montags um 06:00 Uhr

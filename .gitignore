@@ -1,0 +1,30 @@
+# Umgebungsvariablen
+.env
+
+# Log-Dateien
+*.log
+
+# Python-Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Daten (Förderprogramme, Uploads)
+data/
+uploads/
+
+# Virtuelle Umgebung
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
