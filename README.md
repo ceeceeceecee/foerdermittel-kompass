@@ -37,11 +37,17 @@ Der Fördermittel-Kompass automatisiert die Suche, Prüfung und Überwachung:
 ![Programmsuche](screenshots/program-search.png)
 *Förderprogramme durchsuchen und filtern*
 
+![Projektvorhaben](screenshots/project-input.png)
+*Projektvorhaben eingeben und KI-gestützt prüfen*
+
 ![KI-Matching](screenshots/matching-result.png)
 *Automatische Passunganalyse mit Bewertung*
 
 ![Fristenkalender](screenshots/deadline-calendar.png)
 *Deadline-Tracking mit Ampelsystem*
+
+![Checklisten](screenshots/checklist.png)
+*Antrags-Checklisten und Aufgabenverwaltung*
 
 ## Architektur
 |   Port 8501       |     |   Port 5432       |     |   Port 11434      |
