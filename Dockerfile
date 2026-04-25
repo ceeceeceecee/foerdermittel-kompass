@@ -5,6 +5,8 @@ WORKDIR /app
 # System-Abhängigkeiten
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
+    fonts-dejavu-core \
+    fonts-liberation \
     && rm -rf /var/lib/apt/lists/*
 
 # Python-Abhängigkeiten

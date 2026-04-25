@@ -30,7 +30,7 @@ Der Fördermittel-Kompass automatisiert die Suche, Prüfung und Überwachung:
 - [x] Ampelsystem für Fristen (grün/gelb/rot)
 - [x] Checklisten für den gesamten Antragsprozess
 - [x] Lokale KI-Verarbeitung via Ollama – keine Cloud-Dienste, voll DSGVO-konform
-- [x] Selbstgehostet, Docker-basiert, einfach zu部署en
+- [x] Selbstgehostet, Docker-basiert, einfach zu deployen
 
 ## 📸 Anwendung
 
