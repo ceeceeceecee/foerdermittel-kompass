@@ -1,7 +1,6 @@
 # Foerdermittel Kompass
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/ceeceeceecee/ai-document-analyzer/main/docs/coletrading-banner.svg" alt="ColeTrading" width="600">
 </p>
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python) ![DSGVO](https://img.shields.io/badge/DSGVO-Konform-009B3A) ![Ollama](https://img.shields.io/badge/Ollama-Lokal-000?logo=ollama) ![Docker](https://img.shields.io/badge/Docker-Bereit-2496ED?logo=docker) ![License](https://img.shields.io/badge/License-MIT-333)
@@ -71,5 +70,4 @@ Beiträge sind willkommen! Bitte erstelle einen Issue oder Pull Request.
 MIT License — siehe [LICENSE](LICENSE).
 
 <p align="center">
-<a href="https://github.com/ceeceeceecee">ColeTrading</a> &bull; DSGVO-konform &bull; Self-Hosted &bull; Open Source
 </p>

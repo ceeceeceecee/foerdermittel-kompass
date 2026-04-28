@@ -10,6 +10,11 @@ import json
 import yaml
 from datetime import datetime, timedelta
 
+# -- Unified Theme System --
+import sys, os as _theme_os
+sys.path.insert(0, _theme_os.path.dirname(_theme_os.path.abspath(__file__)))
+from theme import init_theme, theme_toggle_sidebar, app_footer
+
 import streamlit as st
 import pandas as pd
 
@@ -406,6 +411,8 @@ def main():
         initial_sidebar_state="expanded",
     )
 
+    init_theme()
+
     st.title("🧭 Fördermittel-Kompass für Kommunen")
     st.caption("Passende Förderprogramme schneller finden — DSGVO-konform und selbstgehostet")
 
@@ -442,3 +449,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# -- Theme Toggle --
+theme_toggle_sidebar()
+
+# -- Footer --
+app_footer()
