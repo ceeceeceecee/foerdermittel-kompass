@@ -27,7 +27,7 @@ KI-gestützte Fördermittelsuche für Kommunen. Matching von Projekten mit passe
 | Python 3.11+ | Backend |
 | Streamlit | Web-Interface |
 | Ollama | Lokale KI |
-| SQLite | Datenbank |
+| PostgreSQL | Datenbank |
 | Docker | Deployment |
 
 ## Quick Start
