@@ -57,6 +57,8 @@ streamlit run app.py
 
 **Deadline-Kalender**
 
+<img src="screenshots/fristenkalender.png" alt="Fristenkalender mit Ampelsystem" width="800">
+
 
 ---
 
