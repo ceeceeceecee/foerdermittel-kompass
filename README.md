@@ -57,7 +57,6 @@ streamlit run app.py
 
 **Deadline-Kalender**
 
-<img src="screenshots/deadline-calendar.png" alt="Deadline-Kalender" width="800">
 
 ---
 
