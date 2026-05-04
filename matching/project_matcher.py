@@ -16,7 +16,7 @@ import requests
 logger = logging.getLogger(__name__)
 
 # Standard-Konfiguration
-STANDARD_OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+STANDARD_OLLAMA_HOST = os.getenv("OLLAMA_HOST", os.getenv("OLLAMA_HOST", "http://localhost:11434"))
 STANDARD_MODell = os.getenv("MODEL_NAME", "llama3")
 PROMPT_VERZEICHNIS = Path(__file__).parent.parent / "prompts"
 
